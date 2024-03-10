@@ -114,13 +114,7 @@ export default function DetailValidator() {
       </Head>
       <main>
         <HStack h="24px">
-          <Link
-            as={NextLink}
-            style={{ textDecoration: 'none' }}
-            _focus={{ boxShadow: 'none' }}
-          >
             <Text color={'cyan.400'}>Validator Detail: #{validator.address}</Text>
-          </Link>
         </HStack>
         <Box
           mt={8}

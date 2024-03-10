@@ -134,9 +134,7 @@ export default function DetailTransaction() {
       </Head>
       <main>
         <HStack h="24px">
-          <Link>
             <Text color={'cyan.400'}>Transaction Detail: #{tx?.hash}</Text>
-          </Link>
         </HStack>
         <Box
           mt={8}

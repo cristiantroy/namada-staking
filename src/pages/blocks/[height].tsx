@@ -120,13 +120,7 @@ export default function DetailBlock() {
       ) : (
         <main>
           <HStack h="24px">
-	    <Link
-            as={NextLink}
-            style={{ textDecoration: 'none' }}
-            _focus={{ boxShadow: 'none' }}
-	    >
             <Text>Block #{block?.height}</Text>
-	    </Link>
           </HStack>
           <Box
             mt={8}
