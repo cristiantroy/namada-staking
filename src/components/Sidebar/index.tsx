@@ -67,7 +67,7 @@ export default function Sidebar({ children }: { children: ReactNode }) {
           <SidebarContent onClose={onClose} />
         </DrawerContent>
       </Drawer>
-      <Box ml={{ base: 0, md: 60 }} p="4">
+      <Box ml={{ base: 0, md: 0 }} p="4">
         {children}
       </Box>
     </Box>
