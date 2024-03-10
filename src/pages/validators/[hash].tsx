@@ -113,6 +113,9 @@ export default function DetailValidator() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+<HStack h="24px">
+	<Text color={'cyan.400'}>Validator Detail</Text>
+</HStack>
         <Box
           mt={8}
           bg={useColorModeValue('light-container', 'dark-container')}
