@@ -105,7 +105,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       h="full"
       {...rest}
     >
-      <Flex flexDirection="column" h="full" justifyContent="space-between">
+      <Flex flexDirection="row" h="full" justifyContent="space-between" as="header" justify="space-between" align="center" p="4">
         <Box>
           <Flex
             h="20"
