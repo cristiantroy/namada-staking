@@ -191,26 +191,6 @@ export default function Validators() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <HStack h="24px">
-          <Heading size={'md'}>Validators</Heading>
-          <Divider borderColor={'gray'} size="10px" orientation="vertical" />
-          <Link
-            as={NextLink}
-            href={'/'}
-            style={{ textDecoration: 'none' }}
-            _focus={{ boxShadow: 'none' }}
-            display="flex"
-            justifyContent="center"
-          >
-            <Icon
-              fontSize="16"
-              color={useColorModeValue('light-theme', 'dark-theme')}
-              as={FiHome}
-            />
-          </Link>
-          <Icon fontSize="16" as={FiShield} />
-          <Text>Validators</Text>
-        </HStack>
 
         <Box
           mt={8}
