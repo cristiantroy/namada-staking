@@ -42,21 +42,6 @@ const LinkItems: Array<LinkItemProps> = [
   { name: 'Transactions', icon: FiGlobe, route: '/txs' },
   { name: 'Validators', icon: FiCompass, route: '/validators' },
   { name: 'Proposals', icon: FiStar, route: '/proposals' },
-  { name: 'Parameters', icon: FiSliders, route: '/parameters' },
-]
-const RefLinkItems: Array<LinkItemProps> = [
-  {
-    name: 'Github',
-    icon: FiGithub,
-    route: 'https://github.com/NodeValidatorVN/namada-explorer',
-    isBlank: true,
-  },
-  {
-    name: 'Report Issues',
-    icon: FiAlertCircle,
-    route: 'https://github.com/NodeValidatorVN/namada-explorer/issues',
-    isBlank: true,
-  },
 ]
 
 export default function Sidebar({ children }: { children: ReactNode }) {
@@ -105,7 +90,10 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       h="full"
       {...rest}
     >
-      <Flex flexDirection="row" h="full" justifyContent="space-between" as="header" justify="space-between" align="center" p="4">
+<Flex as="header" justify="space-between" align="center" p="4">
+  <Flex align="center" mr={5}>
+    {/* Change flexDirection from "column" to "row" */}
+    <Flex flexDirection="row">
         <Box>
           <Flex
             h="20"
@@ -133,28 +121,9 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
               {link.name}
             </NavItem>
           ))}
-          <Heading
-            mt="6"
-            p="4"
-            mx="4"
-            size={'xs'}
-            textTransform="uppercase"
-            textColor={useColorModeValue('gray.500', 'gray.100')}
-            fontWeight="medium"
-          >
-            Links
-          </Heading>
-          {RefLinkItems.map((link) => (
-            <NavItem
-              key={link.name}
-              icon={link.icon}
-              route={link.route}
-              isBlank={link.isBlank}
-            >
-              {link.name}
-            </NavItem>
-          ))}
         </Box>
+      </Flex>
+      </Flex>
       </Flex>
     </Box>
   )
