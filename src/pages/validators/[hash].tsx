@@ -107,8 +107,8 @@ export default function DetailValidator() {
   return (
     <>
       <Head>
-        <title>Detail Validator | Namada Explorer</title>
-        <meta name="description" content="Txs | Namada Explorer" />
+        <title>Namada Explorer</title>
+        <meta name="description" content="Namada Explorer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

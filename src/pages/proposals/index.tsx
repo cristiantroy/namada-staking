@@ -172,8 +172,8 @@ export default function Proposals() {
   return (
     <>
       <Head>
-        <title>Proposals | Namada Explorer</title>
-        <meta name="description" content="Proposals | Namada Explorer" />
+        <title>Namada Explorer</title>
+        <meta name="description" content="Namada Explorer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

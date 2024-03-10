@@ -93,7 +93,7 @@ export default function Blocks() {
     <>
       <Head>
         <title>Namada Explorer</title>
-        <meta name="description" content="Blocks | Namada Explorer" />
+        <meta name="description" content="Namada Explorer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
