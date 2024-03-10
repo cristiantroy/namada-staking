@@ -82,15 +82,6 @@ interface SidebarProps extends BoxProps {
 
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
-    <Box
-      bg={useColorModeValue('light-container', 'dark-container')}
-      borderRight="1px"
-      borderRightColor={useColorModeValue('gray.200', 'gray.700')}
-      w={{ base: 'full', md: 60 }}
-      pos="fixed"
-      h="full"
-      {...rest}
-    >
 <Stack as="header" direction="row" align="center" justify="space-between" p="4">
   <Stack direction="row" spacing={4} align="center">
     <Link href="/">
@@ -116,7 +107,6 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
           ))}
   </Stack>
 </Stack>
-    </Box>
   )
 }
 

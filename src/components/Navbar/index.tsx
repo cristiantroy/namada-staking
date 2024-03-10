@@ -105,23 +105,6 @@ export default function Navbar() {
         justifyContent={'space-between'}
       >
         <HStack>
-          <Icon mr="4" fontSize="32" color={'green.600'} as={FiRadio} />
-          <Box>
-            <Skeleton isLoaded={isLoadedSkeleton}>
-              <Heading size="xs">
-                {newBlock?.header.chainId
-                  ? newBlock?.header.chainId
-                  : status?.nodeInfo.network}
-              </Heading>
-            </Skeleton>
-            <Skeleton isLoaded={isLoadedSkeleton}>
-              <Text pt="2" fontSize="sm">
-                {address}
-              </Text>
-            </Skeleton>
-          </Box>
-        </HStack>
-        <HStack>
           <IconButton
             variant="ghost"
             aria-label="Search"
