@@ -10,7 +10,7 @@ function App({ Component, pageProps }: AppProps) {
   const ComponentElement = Component as any
   return (
     <ChakraProvider theme={theme}>
-      <ColorModeProvider options={{ useSystemColorMode: false }} value="dark">
+      <ColorModeProvider options={{ useSystemColorMode: false }} value="light">
       <Layout>
         <ComponentElement {...pageProps} />
       </Layout>
