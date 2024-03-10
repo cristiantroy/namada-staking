@@ -94,8 +94,8 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
             >
               {link.name}
             </NavItem>
-	    <Navbar />
           ))}
+	    <Navbar />
   </Stack>
 </Stack>
   )
