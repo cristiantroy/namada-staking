@@ -4,6 +4,7 @@ import {
   Box,
   CloseButton,
   Flex,
+  Stack,
   Icon,
   useColorModeValue,
   Link,
@@ -90,25 +91,17 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       h="full"
       {...rest}
     >
-<Flex as="header" justify="space-between" align="center" p="4">
-  <Flex align="center" mr={5}>
-    {/* Change flexDirection from "column" to "row" */}
-    <Flex flexDirection="row">
-        <Box>
-          <Flex
-            h="20"
-            alignItems="center"
-            mx="8"
-            justifyContent="space-between"
-          >
-            <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
-              Namada Explorer
-            </Text>
-            <CloseButton
-              display={{ base: 'flex', md: 'none' }}
-              onClick={onClose}
-            />
-          </Flex>
+<Stack as="header" direction="row" align="center" justify="space-between" p="4">
+  <Stack direction="row" spacing={4} align="center">
+    <Link href="/">
+      Home
+    </Link>
+    <Link href="/blocks">
+      Blocks
+    </Link>
+    <Link href="/transactions">
+      Transactions
+    </Link>
           {LinkItems.map((link) => (
             <NavItem
               key={link.name}
@@ -121,10 +114,8 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
               {link.name}
             </NavItem>
           ))}
-        </Box>
-      </Flex>
-      </Flex>
-      </Flex>
+  </Stack>
+</Stack>
     </Box>
   )
 }
