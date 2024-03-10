@@ -114,14 +114,6 @@ export default function Navbar() {
             icon={<FiSearch />}
             onClick={onOpen}
           />
-          <IconButton
-            variant="ghost"
-            aria-label="Color mode"
-            size="md"
-            fontSize="20"
-            icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-            onClick={toggleColorMode}
-          />
         </HStack>
       </Box>
       <Modal isOpen={isOpen} onClose={onClose}>
