@@ -26,6 +26,8 @@ import {
   FiGithub,
   FiAlertCircle,
   FiGlobe,
+  FiUsers,
+  FiCheckCircle,
 } from 'react-icons/fi'
 import { IconType } from 'react-icons'
 import NextLink from 'next/link'
@@ -42,8 +44,8 @@ const LinkItems: Array<LinkItemProps> = [
   { name: 'Home', icon: FiHome, route: '/' },
   { name: 'Blocks', icon: FiBox, route: '/blocks' },
   { name: 'Transactions', icon: FiGlobe, route: '/txs' },
-  { name: 'Validators', icon: FiCompass, route: '/validators' },
-  { name: 'Proposals', icon: FiStar, route: '/proposals' },
+  { name: 'Validators', icon: FiUsers, route: '/validators' },
+  { name: 'Proposals', icon: FiCheckCircle, route: '/proposals' },
 ]
 
 export default function Sidebar({ children }: { children: ReactNode }) {
