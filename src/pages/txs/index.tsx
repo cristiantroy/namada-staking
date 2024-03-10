@@ -115,12 +115,12 @@ export default function Transactions() {
             <Table variant="simple">
               <Thead>
                 <Tr>
-                  <Th>Tx Hash</Th>
-                  <Th>Status</Th>
-                  <Th>Height</Th>
+                  <Th>Txn Hash</Th>
                   <Th>Type</Th>
+                  <Th>Block</Th>
+                  <Th>Age</Th>
                   <Th>Shielded</Th>
-                  <Th>Time</Th>
+                  <Th>Status</Th>
                 </Tr>
               </Thead>
               {loading ? (
@@ -154,6 +154,18 @@ export default function Transactions() {
                           <Text color={'cyan.400'}>{trimHash(tx.hash)}</Text>
                         </Link>
                       </Td>
+                      <Td>{tx.tx ? Object.keys(tx.tx)[0] : tx.txType}</Td>
+                      <Td>{tx.height}</Td>
+                      <Td>{timeFromNow(tx.time)}</Td>
+                      <Td>
+                        {tx &&
+                        tx.tx &&
+                        tx.tx.Transfer &&
+                        tx.tx.Transfer.shielded
+                          ? 'Yes'
+                          : 'No'}
+                      </Td>
+
                       <Td>
                         {tx?.returnCode == 0 || tx?.txType == 'Wrapper' ? (
                           <Tag variant="subtle" colorScheme="green">
@@ -167,18 +179,7 @@ export default function Transactions() {
                           </Tag>
                         )}
                       </Td>
-                      <Td>
-                        {tx &&
-                        tx.tx &&
-                        tx.tx.Transfer &&
-                        tx.tx.Transfer.shielded
-                          ? 'Yes'
-                          : 'No'}
-                      </Td>
 
-                      <Td>{tx.tx ? Object.keys(tx.tx)[0] : tx.txType}</Td>
-                      <Td>{tx.height}</Td>
-                      <Td>{timeFromNow(tx.time)}</Td>
                     </Tr>
                   ))}
                 </Tbody>

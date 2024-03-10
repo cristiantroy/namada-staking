@@ -113,7 +113,7 @@ export default function Blocks() {
                   <Th>Block ID</Th>
                   <Th>Txs</Th>
                   <Th>Proposer</Th>
-                  <Th>Time</Th>
+                  <Th>Age</Th>
                 </Tr>
               </Thead>
 
