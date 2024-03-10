@@ -14,6 +14,7 @@ function App({ Component, pageProps }: AppProps) {
       <Layout>
         <ComponentElement {...pageProps} />
       </Layout>
+      </ColorModeProvider>
     </ChakraProvider>
   ) as ReactElement
 }
