@@ -86,7 +86,6 @@ export default function Layout({ children }: { children: ReactNode }) {
       {isLoading ? <LoadingPage /> : <></>}
       {connectState && !isLoading ? (
         <Sidebar>
-          <Navbar />
           {children}
         </Sidebar>
       ) : (
