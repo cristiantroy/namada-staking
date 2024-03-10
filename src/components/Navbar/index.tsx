@@ -46,6 +46,7 @@ export default function Navbar() {
 
   const [inputSearch, setInputSearch] = useState('')
   const [isLoadedSkeleton, setIsLoadedSkeleton] = useState(false)
+  toggleColorMode()
 
   useEffect(() => {
     if (tmClient) {
