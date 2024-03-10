@@ -137,7 +137,7 @@ export default function Navbar() {
               _hover={{
                 opacity: 0.8,
               }}
-              color="white"
+              color="black"
               w="full"
               textTransform="uppercase"
               onClick={handleSearch}
