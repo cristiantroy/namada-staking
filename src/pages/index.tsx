@@ -19,6 +19,7 @@ import {
   FiBox,
   FiClock,
   FiCpu,
+  FiWifi,
   FiUsers,
 } from 'react-icons/fi'
 import { IconType } from 'react-icons'
@@ -97,8 +98,8 @@ export default function Home() {
               <BoxInfo
                 bgColor="orange.200"
                 color="orange.600"
-                icon={FiCpu}
-                name="Network"
+                icon={FiWifi}
+                name="Chain ID"
                 value={
                   newBlock?.header.chainId
                     ? newBlock?.header.chainId
