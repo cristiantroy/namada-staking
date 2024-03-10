@@ -120,35 +120,12 @@ export default function DetailBlock() {
       ) : (
         <main>
           <HStack h="24px">
-            <Heading size={'md'}>Block</Heading>
-            <Divider borderColor={'gray'} size="10px" orientation="vertical" />
-            <Link
-              as={NextLink}
-              href={'/'}
-              style={{ textDecoration: 'none' }}
-              _focus={{ boxShadow: 'none' }}
-              display="flex"
-              justifyContent="center"
-            >
-              <Icon
-                fontSize="16"
-                color={useColorModeValue('light-theme', 'dark-theme')}
-                as={FiHome}
-              />
-            </Link>
-            <Icon fontSize="16" as={FiChevronRight} />
-            <Link
-              as={NextLink}
-              href={'/blocks'}
-              style={{ textDecoration: 'none' }}
-              _focus={{ boxShadow: 'none' }}
-            >
-              <Text color={useColorModeValue('light-theme', 'dark-theme')}>
-                Blocks
-              </Text>
-            </Link>
-            <Icon fontSize="16" as={FiChevronRight} />
+	    <Link
+            as={NextLink}
+            style={{ textDecoration: 'none' }}
+            _focus={{ boxShadow: 'none' }}
             <Text>Block #{height}</Text>
+	    </Link>
           </HStack>
           <Box
             mt={8}

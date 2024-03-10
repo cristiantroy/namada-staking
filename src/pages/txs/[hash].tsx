@@ -134,30 +134,8 @@ export default function DetailTransaction() {
       </Head>
       <main>
         <HStack h="24px">
-          <Heading size={'md'}>Transaction</Heading>
-          <Divider borderColor={'gray'} size="10px" orientation="vertical" />
           <Link
-            as={NextLink}
-            href={'/'}
-            style={{ textDecoration: 'none' }}
-            _focus={{ boxShadow: 'none' }}
-            display="flex"
-            justifyContent="center"
-          >
-            <Icon
-              fontSize="16"
-              color={useColorModeValue('light-theme', 'dark-theme')}
-              as={FiHome}
-            />
-          </Link>
-          <Icon fontSize="16" as={FiChevronRight} />
-          <Link
-            as={NextLink}
-            href={'/blocks'}
-            style={{ textDecoration: 'none' }}
-            _focus={{ boxShadow: 'none' }}
-          >
-            <Text color={'cyan.400'}>Transaction Detail</Text>
+            <Text color={'cyan.400'}>Transaction Detail: #{tx?.hash}</Text>
           </Link>
         </HStack>
         <Box

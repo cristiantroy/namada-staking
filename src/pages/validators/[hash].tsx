@@ -114,30 +114,12 @@ export default function DetailValidator() {
       </Head>
       <main>
         <HStack h="24px">
-          <Heading size={'md'}>Validator</Heading>
-          <Divider borderColor={'gray'} size="10px" orientation="vertical" />
           <Link
             as={NextLink}
-            href={'/'}
-            style={{ textDecoration: 'none' }}
-            _focus={{ boxShadow: 'none' }}
-            display="flex"
-            justifyContent="center"
-          >
-            <Icon
-              fontSize="16"
-              color={useColorModeValue('light-theme', 'dark-theme')}
-              as={FiHome}
-            />
-          </Link>
-          <Icon fontSize="16" as={FiChevronRight} />
-          <Link
-            as={NextLink}
-            href={'/blocks'}
             style={{ textDecoration: 'none' }}
             _focus={{ boxShadow: 'none' }}
           >
-            <Text color={'cyan.400'}>Validator Detail</Text>
+            <Text color={'cyan.400'}>Validator Detail: #{validator.address}</Text>
           </Link>
         </HStack>
         <Box
