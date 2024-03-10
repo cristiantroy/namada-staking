@@ -30,6 +30,7 @@ import {
 import { IconType } from 'react-icons'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
+import Navbar from '../Navbar'
 
 interface LinkItemProps {
   name: string
@@ -93,6 +94,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
             >
               {link.name}
             </NavItem>
+	    <Navbar />
           ))}
   </Stack>
 </Stack>
