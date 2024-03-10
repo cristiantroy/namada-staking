@@ -84,15 +84,6 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
 <Stack as="header" direction="row" align="center" justify="space-between" p="4">
   <Stack direction="row" spacing={4} align="center">
-    <Link href="/">
-      Home
-    </Link>
-    <Link href="/blocks">
-      Blocks
-    </Link>
-    <Link href="/transactions">
-      Transactions
-    </Link>
           {LinkItems.map((link) => (
             <NavItem
               key={link.name}
