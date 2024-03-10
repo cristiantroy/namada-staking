@@ -63,6 +63,21 @@ export default function Home() {
       <main>
         <Box mt={8}>
           <SimpleGrid minChildWidth="200px" spacing="40px">
+
+            <Skeleton isLoaded={isLoaded}>
+              <BoxInfo
+                bgColor="orange.200"
+                color="orange.600"
+                icon={FiWifi}
+                name="Chain ID"
+                value={
+                  newBlock?.header.chainId
+                    ? newBlock?.header.chainId
+                    : status?.nodeInfo.network
+                }
+              />
+            </Skeleton>
+
             <Skeleton isLoaded={isLoaded}>
               <BoxInfo
                 bgColor="cyan.200"
@@ -94,19 +109,6 @@ export default function Home() {
               />
             </Skeleton>
 
-            <Skeleton isLoaded={isLoaded}>
-              <BoxInfo
-                bgColor="orange.200"
-                color="orange.600"
-                icon={FiWifi}
-                name="Chain ID"
-                value={
-                  newBlock?.header.chainId
-                    ? newBlock?.header.chainId
-                    : status?.nodeInfo.network
-                }
-              />
-            </Skeleton>
 
             <Skeleton isLoaded={isLoaded}>
               <BoxInfo
