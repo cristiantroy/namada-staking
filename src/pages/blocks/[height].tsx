@@ -124,7 +124,8 @@ export default function DetailBlock() {
             as={NextLink}
             style={{ textDecoration: 'none' }}
             _focus={{ boxShadow: 'none' }}
-            <Text>Block #{height}</Text>
+	    >
+            <Text>Block #{block?.height}</Text>
 	    </Link>
           </HStack>
           <Box
