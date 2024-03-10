@@ -96,12 +96,11 @@ export default function Navbar() {
   return (
     <>
       <Box
-        bg={useColorModeValue('light-container', 'dark-container')}
+        bg={useColorModeValue('gray.100', 'gray.900')}
         w="100%"
         p={4}
         shadow={'base'}
         borderRadius={4}
-        marginBottom={4}
         display={'flex'}
         justifyContent={'space-between'}
       >
