@@ -8,4 +8,3 @@
 - A search function that allows you to quickly find blocks, transactions, and accounts
 - A list of active validators
 - A list of proposals
-- Blockchain parameters
