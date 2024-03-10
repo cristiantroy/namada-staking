@@ -98,7 +98,7 @@ export default function Transactions() {
   return (
     <>
       <Head>
-        <title>Transactions | Namada Explorer</title>
+        <title>Namada Explorer</title>
         <meta name="description" content="Transactions | Namada Explorer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
